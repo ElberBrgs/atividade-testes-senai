@@ -19,3 +19,18 @@ def test_email_valido(engenheiro_valido):
 
 def test_crea_valido(engenheiro_valido):
     assert engenheiro_valido.crea == "6587423145"
+
+def test_logradouro_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.logradouro == "Avenida Carlos Lindenberg"
+
+def test_numero_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.numero == "289"
+
+def test_complemento_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.complemento == "Cobi de Cima"
+
+def test_cep_valido(engenheiro_valido):
+    assert engenheiro_valido.endereco.cep == "29117-730"
+
+def test_cidade_valida(engenheiro_valido):
+    assert engenheiro_valido.endereco.cidade == "Vila Velha"
